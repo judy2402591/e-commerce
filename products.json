@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Oversized Black T-Shirt",
+        "image": "images/products/black-tshirt.jpg",
+        "rating": 4.8,
+        "price": 95,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 2,
+        "name": "Relaxed Blue Jeans",
+        "image": "images/products/blue-jeans.jpg",
+        "rating": 4.6,
+        "price": 180,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 3,
+        "name": "Checked Overshirt",
+        "image": "images/products/checked-shirt.jpg",
+        "rating": 4.7,
+        "price": 145,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 4,
+        "name": "Brown Knit Top",
+        "image": "images/products/knit-top.jpg",
+        "rating": 4.5,
+        "price": 77,
+        "oldPrice": 110,
+        "discount": 30,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 5,
+        "name": "Wide Leg Cargo Pants",
+        "image": "images/products/cargo-pants.jpg",
+        "rating": 4.6,
+        "price": 160,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 6,
+        "name": "Cream Polo Shirt",
+        "image": "images/products/cream-polo.jpg",
+        "rating": 4.4,
+        "price": 120,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 7,
+        "name": "Denim Jacket",
+        "image": "images/products/denim-jacket.jpg",
+        "rating": 4.9,
+        "price": 176,
+        "oldPrice": 220,
+        "discount": 20,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 8,
+        "name": "Straight Fit Trousers",
+        "image": "images/products/trousers.jpg",
+        "rating": 4.5,
+        "price": 150,
+        "oldPrice": null,
+        "discount": null,
+        "section": "new-arrivals"
+    },
+    {
+        "id": 9,
+        "name": "Classic Blue Shirt",
+        "image": "images/products/blue-shirt.jpg",
+        "rating": 4.8,
+        "price": 90,
+        "oldPrice": 120,
+        "discount": 25,
+        "section": "top-selling"
+    },
+    {
+        "id": 10,
+        "name": "Wide Leg Cargo Pants",
+        "image": "images/products/cargo-pants.jpg",
+        "rating": 4.6,
+        "price": 160,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 11,
+        "name": "Denim Jacket",
+        "image": "images/products/denim-jacket.jpg",
+        "rating": 4.9,
+        "price": 220,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 12,
+        "name": "Relaxed Blue Jeans",
+        "image": "images/products/blue-jeans.jpg",
+        "rating": 4.6,
+        "price": 180,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 13,
+        "name": "White Casual Shirt",
+        "image": "images/products/white-shirt.jpg",
+        "rating": 4.7,
+        "price": 115,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 14,
+        "name": "Classic Black Hoodie",
+        "image": "images/products/black-hoodie.jpg",
+        "rating": 4.8,
+        "price": 140,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 15,
+        "name": "Beige Knit Sweater",
+        "image": "images/products/beige-sweater.jpg",
+        "rating": 4.5,
+        "price": 135,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    },
+    {
+        "id": 16,
+        "name": "Grey Vest",
+        "image": "images/products/grey-vest.jpg",
+        "rating": 4.7,
+        "price": 125,
+        "oldPrice": null,
+        "discount": null,
+        "section": "top-selling"
+    }
+]
