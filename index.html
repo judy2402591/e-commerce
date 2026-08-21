@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +20,9 @@
 
 <body>
 
-    <!-- HEADER -->
     <div id="site-header"></div>
 
 
-    <!-- HERO SECTION -->
     <section class="hero-section">
 
         <div class="container">
@@ -51,7 +50,11 @@
 
                         <div class="col-4">
 
-                            <h3>200+</h3>
+                            <h3
+                                class="count-number"
+                                data-count="200">
+                                0
+                            </h3>
 
                             <p>
                                 International Brands
@@ -62,7 +65,11 @@
 
                         <div class="col-4 stat-border">
 
-                            <h3>2,000+</h3>
+                            <h3
+                                class="count-number"
+                                data-count="2000">
+                                0
+                            </h3>
 
                             <p>
                                 High-Quality Products
@@ -73,7 +80,11 @@
 
                         <div class="col-4">
 
-                            <h3>30,000+</h3>
+                            <h3
+                                class="count-number"
+                                data-count="30000">
+                                0
+                            </h3>
 
                             <p>
                                 Happy Customers
@@ -112,7 +123,6 @@
 
 
 
-    <!-- BRANDS -->
     <section class="brands-section">
 
         <div class="container">
@@ -147,7 +157,6 @@
 
 
 
-    <!-- NEW ARRIVALS -->
     <section class="products-section">
 
         <div class="container">
@@ -167,7 +176,6 @@
 
 
 
-    <!-- TOP SELLING -->
     <section class="products-section">
 
         <div class="container">
@@ -183,7 +191,6 @@
             ></div>
 
 
-            <!-- VIEW ALL BUTTON -->
             <div class="text-center mt-5">
 
                 <button
@@ -202,7 +209,6 @@
 
 
 
-    <!-- DRESS STYLE -->
     <section class="dress-style-section">
 
         <div class="container">
@@ -217,7 +223,6 @@
                 <div class="dress-style-grid">
 
 
-                    <!-- CASUAL -->
                     <div class="dress-style-card casual">
 
                         <img
@@ -228,7 +233,6 @@
                     </div>
 
 
-                    <!-- FORMAL -->
                     <div class="dress-style-card formal">
 
                         <img
@@ -239,7 +243,6 @@
                     </div>
 
 
-                    <!-- PARTY -->
                     <div class="dress-style-card party">
 
                         <img
@@ -250,7 +253,6 @@
                     </div>
 
 
-                    <!-- GYM -->
                     <div class="dress-style-card gym">
 
                         <img
@@ -270,7 +272,6 @@
 
 
 
-    <!-- HAPPY CUSTOMERS -->
     <section class="customers-section">
 
         <div class="container">
@@ -315,7 +316,6 @@
                 >
 
 
-                    <!-- CUSTOMER 1 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -339,7 +339,6 @@
 
 
 
-                    <!-- CUSTOMER 2 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -362,7 +361,6 @@
 
 
 
-                    <!-- CUSTOMER 3 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -385,7 +383,6 @@
 
 
 
-                    <!-- CUSTOMER 4 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -407,7 +404,6 @@
 
 
 
-                    <!-- CUSTOMER 5 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -429,7 +425,6 @@
 
 
 
-                    <!-- CUSTOMER 6 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -451,7 +446,6 @@
 
 
 
-                    <!-- CUSTOMER 7 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -473,7 +467,6 @@
 
 
 
-                    <!-- CUSTOMER 8 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -495,7 +488,6 @@
 
 
 
-                    <!-- CUSTOMER 9 -->
                     <div class="customer-card">
 
                         <div class="customer-stars">
@@ -523,14 +515,19 @@
 
     </section>
 
+
     <div id="site-footer"></div>
 
 
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="common.js"></script>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.9.0/dist/countUp.umd.js"></script>
 
-    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="count.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
 
