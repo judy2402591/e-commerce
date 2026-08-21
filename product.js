@@ -199,3 +199,77 @@ addCart.addEventListener("click", () => {
 
     alert(`Added to cart\nQuantity: ${quantity}\nColor: ${color}\nSize: ${size}`);
 });
+addCart.addEventListener("click", () => {
+
+    const selectedColor =
+        document.querySelector(".color.selected");
+
+    const selectedSize =
+        document.querySelector(".size.selected");
+
+
+    const color =
+        selectedColor
+            ? selectedColor.dataset.color
+            : "Not selected";
+
+
+    const size =
+        selectedSize
+            ? selectedSize.textContent
+            : "Not selected";
+
+
+    const productId =
+        getProductId();
+
+
+    const savedCart =
+        JSON.parse(
+            localStorage.getItem("shopCart")
+        ) || [];
+
+
+    const existingItem =
+        savedCart.find(item => {
+
+            return (
+                item.id === productId &&
+                item.color === color &&
+                item.size === size
+            );
+
+        });
+
+
+    if (existingItem) {
+
+        existingItem.quantity += quantity;
+
+    } else {
+
+        savedCart.push({
+
+            id: productId,
+
+            quantity: quantity,
+
+            color: color,
+
+            size: size
+
+        });
+
+    }
+
+
+    localStorage.setItem(
+        "shopCart",
+        JSON.stringify(savedCart)
+    );
+
+
+    window.location.href =
+        "cart.html";
+
+});
