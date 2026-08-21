@@ -7,7 +7,11 @@
         "price": 95,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "T-shirts",
+        "color": "black",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 2,
@@ -17,7 +21,11 @@
         "price": 180,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Jeans",
+        "color": "blue",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 3,
@@ -27,7 +35,11 @@
         "price": 145,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Shirts",
+        "color": "black",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 4,
@@ -37,7 +49,11 @@
         "price": 77,
         "oldPrice": 110,
         "discount": 30,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Knitwear",
+        "color": "Brown",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 5,
@@ -47,7 +63,11 @@
         "price": 160,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Jeans",
+        "color": "yellow",
+        "sizes": ["Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 6,
@@ -57,7 +77,11 @@
         "price": 120,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Polo",
+        "color": "white",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 7,
@@ -67,7 +91,11 @@
         "price": 176,
         "oldPrice": 220,
         "discount": 20,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Shirts",
+        "color": "blue",
+        "sizes": ["Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 8,
@@ -77,7 +105,11 @@
         "price": 150,
         "oldPrice": null,
         "discount": null,
-        "section": "new-arrivals"
+        "section": "new-arrivals",
+        "category": "Jeans",
+        "color": "Black",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Formal"
     },
     {
         "id": 9,
@@ -87,37 +119,11 @@
         "price": 90,
         "oldPrice": 120,
         "discount": 25,
-        "section": "top-selling"
-    },
-    {
-        "id": 10,
-        "name": "Wide Leg Cargo Pants",
-        "image": "images/products/cargo-pants.jpg",
-        "rating": 4.6,
-        "price": 160,
-        "oldPrice": null,
-        "discount": null,
-        "section": "top-selling"
-    },
-    {
-        "id": 11,
-        "name": "Denim Jacket",
-        "image": "images/products/denim-jacket.jpg",
-        "rating": 4.9,
-        "price": 220,
-        "oldPrice": null,
-        "discount": null,
-        "section": "top-selling"
-    },
-    {
-        "id": 12,
-        "name": "Relaxed Blue Jeans",
-        "image": "images/products/blue-jeans.jpg",
-        "rating": 4.6,
-        "price": 180,
-        "oldPrice": null,
-        "discount": null,
-        "section": "top-selling"
+        "section": "top-selling",
+        "category": "Shirts",
+        "color": "blue",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Formal"
     },
     {
         "id": 13,
@@ -127,7 +133,11 @@
         "price": 115,
         "oldPrice": null,
         "discount": null,
-        "section": "top-selling"
+        "section": "top-selling",
+        "category": "Shirts",
+        "color": "white",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 14,
@@ -137,7 +147,11 @@
         "price": 140,
         "oldPrice": null,
         "discount": null,
-        "section": "top-selling"
+        "section": "top-selling",
+        "category": "T-shirts",
+        "color": "black",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 15,
@@ -147,7 +161,11 @@
         "price": 135,
         "oldPrice": null,
         "discount": null,
-        "section": "top-selling"
+        "section": "top-selling",
+        "category": "Knitwear",
+        "color": "white",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Casual"
     },
     {
         "id": 16,
@@ -157,6 +175,10 @@
         "price": 125,
         "oldPrice": null,
         "discount": null,
-        "section": "top-selling"
+        "section": "top-selling",
+        "category": "Knitwear",
+        "color": "Grey",
+        "sizes": ["Small", "Medium", "Large"],
+        "style": "Formal"
     }
 ]

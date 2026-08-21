@@ -796,3 +796,14 @@ footer .btn {
         gap: 12px;
     }
 }
+/* =========================================================
+   VIEW ALL PAGE TRANSITION
+========================================================= */
+
+body {
+    transition: opacity 0.22s ease;
+}
+
+body.page-leaving {
+    opacity: 0;
+}

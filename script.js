@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const viewAllBtn =
         document.getElementById("viewAllBtn");
 
-
     function createProductCard(product, index, isTopSelling = false) {
 
         const col = document.createElement("div");
@@ -20,14 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
             col.classList.add("extra-product");
         }
 
-
         let oldPriceHTML = "";
 
         if (product.oldPrice) {
             oldPriceHTML =
                 `<span class="old-price">$${product.oldPrice}</span>`;
         }
-
 
         let discountHTML = "";
 
@@ -36,74 +33,51 @@ document.addEventListener("DOMContentLoaded", () => {
                 `<span class="discount">-${product.discount}%</span>`;
         }
 
-
         col.innerHTML = `
             <div class="product-card">
 
                 <div class="product-image">
-
-                    <img
-                        src="${product.image}"
-                        alt="${product.name}"
-                    >
-
+                    <img src="${product.image}" alt="${product.name}">
                 </div>
-
 
                 <h5>${product.name}</h5>
 
-
                 <div class="rating">
-
                     ★★★★★
-
-                    <span>
-                        ${product.rating}/5
-                    </span>
-
+                    <span>${product.rating}/5</span>
                 </div>
 
-
                 <div class="price">
-
                     $${product.price}
-
                     ${oldPriceHTML}
-
                     ${discountHTML}
-
                 </div>
 
             </div>
         `;
 
-
         col.addEventListener("click", () => {
-            window.location.href = `product.html?id=${product.id}`;
+            window.location.href =
+                `product.html?id=${product.id}`;
         });
-
 
         return col;
     }
 
-
-
     function renderProducts(products) {
 
         newArrivalsContainer.innerHTML = "";
-
         topSellingContainer.innerHTML = "";
 
+        const newArrivals =
+            products.filter(product =>
+                product.section === "new-arrivals"
+            );
 
-        const newArrivals = products.filter(
-            product => product.section === "new-arrivals"
-        );
-
-
-        const topSelling = products.filter(
-            product => product.section === "top-selling"
-        );
-
+        const topSelling =
+            products.filter(product =>
+                product.section === "top-selling"
+            );
 
         newArrivals.forEach((product, index) => {
 
@@ -117,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-
         topSelling.forEach((product, index) => {
 
             topSellingContainer.appendChild(
@@ -129,137 +102,59 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
         });
-
     }
-
-
 
     fetch("products.json")
 
         .then(response => {
 
             if (!response.ok) {
-
-                throw new Error(
-                    "Could not load products.json"
-                );
-
+                throw new Error("Could not load products.json");
             }
 
             return response.json();
 
         })
 
-
         .then(products => {
 
             renderProducts(products);
-
 
             const extraProducts =
                 topSellingContainer.querySelectorAll(
                     ".extra-product"
                 );
 
-
             extraProducts.forEach(product => {
 
                 product.style.display = "none";
-
                 product.style.opacity = "0";
-
-                product.style.transform =
-                    "translateY(10px)";
-
+                product.style.transform = "translateY(10px)";
                 product.style.transition =
                     "opacity 0.45s ease, transform 0.45s ease";
 
             });
 
+            if (viewAllBtn) {
 
+                viewAllBtn.addEventListener("click", () => {
 
-            viewAllBtn.addEventListener("click", () => {
-
-                const isExpanded =
-                    viewAllBtn.dataset.expanded === "true";
-
-
-                if (!isExpanded) {
-
-                    extraProducts.forEach(
-                        (product, index) => {
-
-                            product.style.display = "block";
-
-
-                            setTimeout(() => {
-
-                                product.style.opacity = "1";
-
-                                product.style.transform =
-                                    "translateY(0)";
-
-                            }, index * 80);
-
-                        }
+                    document.body.classList.add(
+                        "page-leaving"
                     );
-
-
-                    viewAllBtn.textContent =
-                        "Show Less";
-
-                    viewAllBtn.dataset.expanded =
-                        "true";
-
-                }
-
-
-                else {
-
-                    [...extraProducts]
-                        .reverse()
-                        .forEach(
-                            (product, index) => {
-
-                                setTimeout(() => {
-
-                                    product.style.opacity = "0";
-
-                                    product.style.transform =
-                                        "translateY(10px)";
-
-                                }, index * 60);
-
-                            }
-                        );
-
 
                     setTimeout(() => {
 
-                        extraProducts.forEach(
-                            product => {
+                        window.location.href =
+                            "viewall.html";
 
-                                product.style.display =
-                                    "none";
+                    }, 220);
 
-                            }
-                        );
+                });
 
-                    }, extraProducts.length * 60 + 450);
-
-
-                    viewAllBtn.textContent =
-                        "View All";
-
-                    viewAllBtn.dataset.expanded =
-                        "false";
-
-                }
-
-            });
+            }
 
         })
-
 
         .catch(error => {
 
@@ -267,7 +162,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Error loading products:",
                 error
             );
-
 
             newArrivalsContainer.innerHTML =
                 `<p class="text-center text-danger">
@@ -278,9 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* =========================================================
-   HAPPY CUSTOMERS SLIDER
-   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -293,7 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const customerNext =
         document.getElementById("customerNext");
 
-
     if (
         !customersWrapper ||
         !customerPrev ||
@@ -302,13 +192,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-
     const customerCards =
-        customersWrapper.querySelectorAll(".customer-card");
-
+        customersWrapper.querySelectorAll(
+            ".customer-card"
+        );
 
     let customerIndex = 0;
-
 
     function getCardWidth() {
 
@@ -316,8 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return 0;
         }
 
-        const card =
-            customerCards[0];
+        const card = customerCards[0];
 
         const style =
             window.getComputedStyle(
@@ -327,22 +215,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const gap =
             parseFloat(style.columnGap) || 16;
 
-
         return card.offsetWidth + gap;
     }
 
-
     function updateCustomers() {
 
-        const cardWidth =
-            getCardWidth();
-
+        const cardWidth = getCardWidth();
 
         customersWrapper.style.transform =
             `translateX(-${customerIndex * cardWidth}px)`;
-
     }
-
 
     customerNext.addEventListener("click", () => {
 
@@ -352,26 +234,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
 
             customerIndex++;
-
             updateCustomers();
 
         }
 
     });
-
 
     customerPrev.addEventListener("click", () => {
 
         if (customerIndex > 0) {
 
             customerIndex--;
-
             updateCustomers();
 
         }
 
     });
-
 
     window.addEventListener(
         "resize",

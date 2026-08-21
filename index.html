@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop.co</title>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="site-header"></div>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content">
+
+                    <h1>
+                        FIND YOUR<br>
+                        PERFECT STYLE
+                    </h1>
+
+                    <p>
+                        Discover our latest collection of stylish pieces
+                        designed to match your everyday look.
+                    </p>
+
+                    <a href="#" class="btn shop-btn">
+                        Shop Now
+                    </a>
+
+
+                    <div class="row stats mt-5">
+
+                        <div class="col-4">
+
+                            <h3>200+</h3>
+
+                            <p>
+                                International Brands
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-4 stat-border">
+
+                            <h3>2,000+</h3>
+
+                            <p>
+                                High-Quality Products
+                            </p>
+
+                        </div>
+
+
+                        <div class="col-4">
+
+                            <h3>30,000+</h3>
+
+                            <p>
+                                Happy Customers
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 hero-image-container">
+
+                    <img
+                        src="images/hero-image.jpg"
+                        alt="Fashion models"
+                        class="hero-image"
+                    >
+
+                    <span class="star star-one">
+                        ✦
+                    </span>
+
+                    <span class="star star-two">
+                        ✦
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BRANDS -->
+    <section class="brands-section">
+
+        <div class="container">
+
+            <div class="row align-items-center text-center">
+
+                <div class="col-6 col-md">
+                    <span>VERSACE</span>
+                </div>
+
+                <div class="col-6 col-md">
+                    <span>ZARA</span>
+                </div>
+
+                <div class="col-6 col-md">
+                    <span>GUCCI</span>
+                </div>
+
+                <div class="col-6 col-md">
+                    <span>PRADA</span>
+                </div>
+
+                <div class="col-12 col-md">
+                    <span>Calvin Klein</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEW ARRIVALS -->
+    <section class="products-section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                NEW ARRIVALS
+            </h2>
+
+            <div
+                id="new-arrivals-products"
+                class="row g-4"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TOP SELLING -->
+    <section class="products-section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                TOP SELLING
+            </h2>
+
+
+            <div
+                id="top-selling-products"
+                class="row g-4"
+            ></div>
+
+
+            <!-- VIEW ALL BUTTON -->
+            <div class="text-center mt-5">
+
+                <button
+                    type="button"
+                    class="view-all-btn"
+                    id="viewAllBtn"
+                >
+                    View All
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DRESS STYLE -->
+    <section class="dress-style-section">
+
+        <div class="container">
+
+            <div class="dress-style-box">
+
+                <h2 class="dress-style-title">
+                    BROWSE BY DRESS STYLE
+                </h2>
+
+
+                <div class="dress-style-grid">
+
+
+                    <!-- CASUAL -->
+                    <div class="dress-style-card casual">
+
+                        <img
+                            src="images/products/pic1.png"
+                            alt="Casual style"
+                        >
+
+                    </div>
+
+
+                    <!-- FORMAL -->
+                    <div class="dress-style-card formal">
+
+                        <img
+                            src="images/products/pic2.png"
+                            alt="Formal style"
+                        >
+
+                    </div>
+
+
+                    <!-- PARTY -->
+                    <div class="dress-style-card party">
+
+                        <img
+                            src="images/products/pic3.png"
+                            alt="Party style"
+                        >
+
+                    </div>
+
+
+                    <!-- GYM -->
+                    <div class="dress-style-card gym">
+
+                        <img
+                            src="images/products/pic4.png"
+                            alt="Gym style"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HAPPY CUSTOMERS -->
+    <section class="customers-section">
+
+        <div class="container">
+
+
+            <div class="customers-header">
+
+                <h2 class="section-title">
+                    OUR HAPPY CUSTOMERS
+                </h2>
+
+
+                <div class="customer-arrows">
+
+                    <button
+                        class="customer-arrow"
+                        id="customerPrev"
+                        type="button"
+                    >
+                        ←
+                    </button>
+
+                    <button
+                        class="customer-arrow"
+                        id="customerNext"
+                        type="button"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="customers-viewport">
+
+                <div
+                    class="customers-wrapper"
+                    id="customersWrapper"
+                >
+
+
+                    <!-- CUSTOMER 1 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Sarah M.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            I'm blown away by the quality and style
+                            of the clothes I received from Shop.co.
+                            From casual wear to elegant dresses,
+                            every piece I've bought has exceeded
+                            my expectations.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 2 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Alex K.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            Finding clothes that align with my personal
+                            style used to be a challenge until I
+                            discovered Shop.co. The range of options
+                            they offer is truly remarkable.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 3 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            James L.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            As someone who's always on the lookout
+                            for unique fashion pieces, I'm thrilled
+                            to have stumbled upon Shop.co. The selection
+                            is diverse and on-trend.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 4 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Olivia P.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            The quality is amazing and everything
+                            arrived exactly as expected. I will
+                            definitely be shopping here again.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 5 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Ethan R.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            Great selection and very comfortable
+                            clothes. The whole shopping experience
+                            was simple and enjoyable.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 6 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★☆
+                        </div>
+
+                        <h5>
+                            Noah B.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            I ordered a few pieces and was impressed
+                            with the fit. Everything looked just like
+                            it did online.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 7 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Ava H.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            I found exactly what I was looking for.
+                            The clothes look great and the quality
+                            is better than I expected.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 8 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Mia T.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            Shopping here has been such a good
+                            experience. The designs are simple,
+                            stylish and easy to wear.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER 9 -->
+                    <div class="customer-card">
+
+                        <div class="customer-stars">
+                            ★★★★★
+                        </div>
+
+                        <h5>
+                            Daniel W.
+                            <span>✓</span>
+                        </h5>
+
+                        <p>
+                            The order arrived quickly and the clothes
+                            were exactly what I expected. I would
+                            definitely recommend Shop.co.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="site-footer"></div>
+
+
+    <script src="common.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

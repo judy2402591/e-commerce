@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual | SHOP.CO</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="viewall.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <main class="shop-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="app.html">Home</a>
+                <span>›</span>
+                <span>Casual</span>
+            </div>
+
+            <div class="shop-heading">
+                <div>
+                    <h1>Casual</h1>
+                    <p id="productCount">Showing 1-10 of 10 Products</p>
+                </div>
+                <div class="sort-area">
+                    <span>Sort by:</span>
+                    <select id="sortSelect">
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+            <div class="shop-layout">
+                <aside class="filters">
+                    <div class="filter-head">
+                        <h3>Filters</h3>
+                        <button id="mobileFilterClose" type="button">×</button>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-title" type="button">
+                            <span>Category</span>
+                            <span>⌃</span>
+                        </button>
+                        <div class="filter-options">
+                            <label>
+                                <input type="checkbox" class="category-filter" value="T-shirts">
+                                T-shirts
+                                <span>›</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Shirts">
+                                Shirts
+                                <span>›</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Jeans">
+                                Jeans
+                                <span>›</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Polo">
+                                Polo
+                                <span>›</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Knitwear">
+                                Knitwear
+                                <span>›</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-title" type="button">
+                            <span>Price</span>
+                            <span>⌃</span>
+                        </button>
+                        <div class="price-filter">
+                            <div class="price-values">
+                                <span>$50</span>
+                                <span id="priceValue">$250</span>
+                            </div>
+                            <input type="range" id="priceRange" min="50" max="250" value="250">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="filter-title" type="button">
+                            <span>Colors</span>
+                            <span>⌃</span>
+                        </button>
+
+                        <div class="color-list">
+                            <button class="color-dot black" data-color="black" aria-label="Black"></button>
+                            <button class="color-dot red" data-color="red" aria-label="Red"></button>
+                            <button class="color-dot yellow" data-color="yellow" aria-label="Yellow"></button>
+                            <button class="color-dot orange" data-color="orange" aria-label="Orange"></button>
+                            <button class="color-dot blue" data-color="blue" aria-label="Blue"></button>
+                            <button class="color-dot purple" data-color="purple" aria-label="Purple"></button>
+                            <button class="color-dot pink" data-color="pink" aria-label="Pink"></button>
+                            <button class="color-dot white" data-color="white" aria-label="White"></button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-title" type="button">
+                            <span>Size</span>
+                            <span>⌃</span>
+                        </button>
+                        <div class="size-list">
+                            <button class="size-filter" data-size="XX-Small">XX-Small</button>
+                            <button class="size-filter" data-size="X-Small">X-Small</button>
+                            <button class="size-filter" data-size="Small">Small</button>
+                            <button class="size-filter" data-size="Medium">Medium</button>
+                            <button class="size-filter active" data-size="Large">Large</button>
+                            <button class="size-filter" data-size="X-Large">X-Large</button>
+                            <button class="size-filter" data-size="XX-Large">XX-Large</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-title" type="button">
+                            <span>Dress Style</span>
+                            <span>⌃</span>
+                        </button>
+                        <div class="style-options">
+                            <button class="style-filter active" data-style="Casual">
+                                Casual
+                                <span>›</span>
+                            </button>
+                            <button class="style-filter" data-style="Formal">
+                                Formal
+                                <span>›</span>
+                            </button>
+
+                            <button class="style-filter" data-style="Party">
+                                Party
+                                <span>›</span>
+                            </button>
+
+                            <button class="style-filter" data-style="Gym">
+                                Gym
+                                <span>›</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="apply-filter" id="applyFilter" type="button">
+                        Apply Filter
+                    </button>
+                </aside>
+                <section class="products-area">
+                    <button class="mobile-filter-button" id="mobileFilterOpen" type="button">
+                        <i class="bi bi-sliders"></i>
+                        Filters
+                    </button>
+                    <div class="product-grid" id="casualProducts"></div>
+                    <div class="empty-state" id="emptyState">
+                        <h3>No products found</h3>
+                        <p>Try changing your filters.</p>
+                    </div>
+                    <div class="pagination">
+                        <button type="button" id="previousPage">
+                            ← Previous
+                        </button>
+                        <div class="page-numbers">
+                            <button class="current">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <span>...</span>
+                            <button>10</button>
+                        </div>
+                        <button type="button" id="nextPage">
+                            Next →
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="common.js"></script>
+    <script src="viewall.js"></script>
+
+</body>
+</html>
